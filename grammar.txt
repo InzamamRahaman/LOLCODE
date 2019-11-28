@@ -1,0 +1,31 @@
+<program> 		::= HAI <nlc> <code_block> <nlc> KTHXBAI
+<code_block>		::= <statement> | <statement> <nlc> <code_block>
+<statement>		::= <declaration> | <comment> | <print_block> |
+		    	     <input_block> | <assignment> | <expression>
+
+<declaration>		::= I HAS A <label> | I HAS A <label> ITZ <value>
+<comment>		    ::= BTW <string> 
+<print_block>		::= VISIBLE <expression> <expression> … <expression> MKAY?
+<input_block>		::= GIMMEH <label>
+<assignment>		::= <label> R <expression>
+<expression>		::= <equals> | <both> | <not_equals> | <greater> | <less> |
+		    	    <add> | <sub> | <mul> | <div> | <mod> |
+		    	    <either> |  <not> | <label> | 
+		    	    <atom>
+<equals>		::= BOTH SAEM <expression> AN <expression>
+<not_equals>	::= DIFFRINT <expression> AN <expression>
+<both>			::= BOTH OF <expression> AN <expression>
+<either>		::= EITHER OF <expression> AN <expression>
+<greater>		::= BIGGR OF <expression> AN <expression>
+<less>			::= SMALLR OF <expression> AN <expression>
+<add>			::= SUM OF <expression> AN <expression>
+<sub>			::= DIFF OF <expression> AN <expression>
+<mul>			::= PRODUKT OF <expression> AN <expression>
+<div>			::= QUOSHUNT OF <expression> AN <expression>
+<mod>			::= MOD OF <expression> AN <expression>
+<not>			::= NOT <expression>
+<label>			::= (A-Za-z0-9)*
+<atom>			::= WIN | FAIL | NOOB | (0-9)* | (0-9)*.(0-9)* | "<string>"
+<string>		::= any character string
+<nlc>			::= (newline character) | ,
+
