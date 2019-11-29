@@ -34,7 +34,7 @@ def declaration():
     return [(simple_declaration, decl_assignment), simple_declaration]
 
 def simple_declaration():
-    return "I", "HAZ", "A", label 
+    return "I", "HAS", "A", label 
 
 def decl_assignment():
     return "ITZ", value
